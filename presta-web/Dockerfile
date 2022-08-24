@@ -10,6 +10,6 @@ RUN npm install --silent
 RUN npm install @angular/cli -g
 
 COPY . .
-RUN npm run build:$env
+RUN npm run build
 EXPOSE 80
 CMD ["npm","start"]
